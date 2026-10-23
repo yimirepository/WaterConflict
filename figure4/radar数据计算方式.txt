@@ -1,0 +1,9 @@
+Affordable，个人gdp相关性倒序。
+Facilitative，export的相关性正序。
+Stress relieving，bws相关性正序。
+Complementary，和别的模式shap interaction正序均值。
+Preventive，mitigating。
+Prescriptive，feature importance及是否在Best组。
+
+
+
