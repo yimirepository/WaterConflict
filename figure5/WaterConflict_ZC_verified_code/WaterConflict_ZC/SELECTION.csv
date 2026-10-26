@@ -1,0 +1,61 @@
+source_archive,source_path,decision,package_path,reason
+thoery.zip,thoery/theory_trace_utils.py,INCLUDED,figure5b/theory_trace_utils.py,Verified offline pipeline; numerical outputs match the eight original result tables. Paths made portable.
+thoery.zip,thoery/run_theory_trace.py,INCLUDED,figure5b/run_theory_trace.py,Verified offline pipeline; numerical outputs match the eight original result tables. Paths made portable.
+thoery.zip,thoery/cooperation_mode_scores.txt,INCLUDED,figure5b/data/cooperation_mode_scores.txt,Required input; copied unchanged.
+thoery.zip,thoery/latest_theory_reference_verification.xlsx,INCLUDED,figure5b/data/latest_theory_reference_verification.xlsx,Required input; analytical fields preserved. Published copy has English metadata and documented narrative-text encoding normalization; analytical cells unchanged. See DATA_NORMALIZATION.md.
+thoery.zip,thoery/event_data_relabel_hydro.xlsx,INCLUDED,figure5b/data/event_data_relabel_hydro.xlsx,Required input; analytical fields preserved. Published copy has English metadata and documented narrative-text encoding normalization; analytical cells unchanged. See DATA_NORMALIZATION.md.
+thoery.zip,thoery/event_data_relabel_IR.xlsx,INCLUDED,figure5b/data/event_data_relabel_IR.xlsx,Required input; analytical fields preserved. Published copy has English metadata and documented narrative-text encoding normalization; analytical cells unchanged. See DATA_NORMALIZATION.md.
+thoery.zip,thoery/event_data_relabel_sus.xlsx,INCLUDED,figure5b/data/event_data_relabel_sus.xlsx,Required input; analytical fields preserved. Published copy has English metadata and documented narrative-text encoding normalization; analytical cells unchanged. See DATA_NORMALIZATION.md.
+suggestions_one-hot_ZC.zip,event_data_relabel_hydro_langchain.xlsx,DEDUPLICATED,figure5b/data/event_data_relabel_hydro.xlsx,"Byte-identical to the corresponding file from thoery.zip. Identity refers to original archives, before documented release normalization."
+suggestions_one-hot_ZC.zip,event_data_relabel_IR_langchain.xlsx,DEDUPLICATED,figure5b/data/event_data_relabel_IR.xlsx,"Byte-identical to the corresponding file from thoery.zip. Identity refers to original archives, before documented release normalization."
+suggestions_one-hot_ZC.zip,event_data_relabel_sus_langchain.xlsx,DEDUPLICATED,figure5b/data/event_data_relabel_sus.xlsx,"Byte-identical to the corresponding file from thoery.zip. Identity refers to original archives, before documented release normalization."
+suggestions_one-hot_ZC.zip,event_data_with_clusters.xlsx,INCLUDED,provenance/event_data_with_clusters.xlsx,"Upstream checkpoint: all 1713 rows, original columns and cluster labels match the three disciplinary inputs. Published copy has English metadata and documented narrative-text encoding normalization; analytical cells unchanged. See DATA_NORMALIZATION.md."
+suggestions_one-hot_ZC.zip,cluster_analysis.py,EXCLUDED,,Historical k=10 candidate; compatible with saved cluster counts but embeddings and exact deployment/model record absent; not uniquely proven producer. Random-embedding fallback unsuitable for release.
+suggestions_one-hot_ZC.zip,cluster_name.py,EXCLUDED,,Initial cluster-title generation only; not the final three-discipline labels/descriptions.
+suggestions_one-hot_ZC.zip,clean_table.py,EXCLUDED,,Uses 13 historical environmental categories rather than the final six cooperation modes.
+suggestions_one-hot_ZC.zip,suggestions_one-hot_ZC.txt,EXCLUDED,,Uses seven historical categories and missing positional recommendation inputs; not the current six-mode or empirical-fit pipeline.
+suggestions_one-hot_ZC.zip,pdf2img.py,EXCLUDED,,Historical PDF preprocessing; source literature and evidence of final use are absent.
+suggestions_one-hot_ZC.zip,rag.py,EXCLUDED,,Historical OCR-to-prompt script; embedding helper is unused; no evidence it is the final full retrieval implementation.
+suggestions_one-hot_ZC.zip,rag_feedback_ZC.txt,EXCLUDED,,Seven-category LLM recommendation trial; not historical-ECDF/sequential recommendations used in the current manuscript.
+suggestions_one-hot_ZC.zip,relabel_updated.py,EXCLUDED,,IR-only candidate writes a different output filename; no execution record linking it uniquely to the supplied final tables.
+suggestions_one-hot_ZC.zip,relabel_ZC.py,EXCLUDED,,Hydrology candidate writes a different output filename; invoke result handling needs repair; not proven producer of supplied tables.
+suggestions_one-hot_ZC.zip,relabel_event.py,EXCLUDED,,Assigns multiple labels per event; missing label text and expected assigned-label outputs; not the stored cluster-relabel tables.
+suggestions_one-hot_ZC.zip,relabel_event_ZC.txt,EXCLUDED,,Alternative event multilabelling script with missing dependencies and no matching final output.
+suggestions_one-hot_ZC.zip,cluster_20240723.rar,EXCLUDED,,Contains duplicate cluster scripts differing only in credential assignments and an equivalent cluster workbook; no additional analytical version.
+suggestions_one-hot_ZC.zip,clean_table_ZC.txt,EXCLUDED_DUPLICATE,,Byte-identical text copy of clean_table.py; same exclusion decision applies.
+suggestions_one-hot_ZC.zip,cluster_analysis_Zipan Cai.txt,EXCLUDED_DUPLICATE,,Byte-identical text copy of cluster_analysis.py; same exclusion decision applies.
+suggestions_one-hot_ZC.zip,cluster_name_Zipan Cai.txt,EXCLUDED_DUPLICATE,,Byte-identical text copy of cluster_name.py; same exclusion decision applies.
+suggestions_one-hot_ZC.zip,pdf2img_Zipan Cai.txt,EXCLUDED_DUPLICATE,,Byte-identical text copy of pdf2img.py; same exclusion decision applies.
+suggestions_one-hot_ZC.zip,rag_Zipan Cai.txt,EXCLUDED_DUPLICATE,,Byte-identical text copy of rag.py; same exclusion decision applies.
+suggestions_one-hot_ZC.zip,relabel_LangChain_Zipan Cai.txt,EXCLUDED_DUPLICATE,,Byte-identical text copy of relabel_updated.py; same exclusion decision applies.
+suggestions_one-hot_ZC.zip,relabel_1_Zipan Cai.txt,EXCLUDED_DUPLICATE,,Byte-identical text copy of relabel_ZC.py; same exclusion decision applies.
+thoery.zip,thoery/thoeretic_analysis.ipynb,EXCLUDED,,Alternative entry point to the same offline pipeline; omitted so one executable entry point is supplied.
+thoery.zip,thoery/SSP5_Dataset.xlsx,EXCLUDED,,Not referenced by this theory-trace pipeline.
+thoery.zip,thoery/theory_reference_verification.xlsx,EXCLUDED,,Workbook values match latest_theory_reference_verification.xlsx; code reads the latest_ file.
+thoery.zip,thoery/theory_reference_rag.py,EXCLUDED,,"Auxiliary online title-based literature check, not required to reproduce the fixed offline outputs; contains credentials in original."
+thoery.zip,thoery/run_theory_reference_rag.py,EXCLUDED,,Entry point for excluded optional online reference check.
+thoery.zip,thoery/theory_reference_doi_enricher.py,EXCLUDED,,Optional online metadata enrichment; saved verification input supplied instead.
+thoery.zip,thoery/run_theory_reference_doi_enricher.py,EXCLUDED,,Entry point for excluded optional DOI enrichment.
+thoery.zip,thoery/thoeretic analysis/,EXCLUDED,,"Older output generation, including 40 rather than 39 theory-to-mode links."
+thoery.zip,thoery/output_theory_trace/radar_cards/,EXCLUDED,,Historical radar cards are not regenerated by current source and contain old theory-summary text.
+thoery.zip,"thoery/output_theory_trace/figures/1/,2/,3/",EXCLUDED,,Alternative plot exports; not needed to run the single selected source.
+thoery.zip,thoery/__pycache__/,EXCLUDED,,"Generated bytecode/cache files, not source."
+thoery.zip,thoery/output_theory_trace/tables/cluster_to_mode_trace.csv,INCLUDED,figure5b/reference_tables/cluster_to_mode_trace.csv,Original output table retained as an independent regression reference.
+thoery.zip,thoery/output_theory_trace/tables/discipline_clusters.csv,INCLUDED,figure5b/reference_tables/discipline_clusters.csv,Original output table retained as an independent regression reference.
+thoery.zip,thoery/output_theory_trace/tables/final_mode_catalog.csv,INCLUDED,figure5b/reference_tables/final_mode_catalog.csv,Original output table retained as an independent regression reference.
+thoery.zip,thoery/output_theory_trace/tables/final_mode_theory_summary.csv,INCLUDED,figure5b/reference_tables/final_mode_theory_summary.csv,Original output table retained as an independent regression reference.
+thoery.zip,thoery/output_theory_trace/tables/radar_card_summary.csv,INCLUDED,figure5b/reference_tables/radar_card_summary.csv,Original output table retained as an independent regression reference.
+thoery.zip,thoery/output_theory_trace/tables/theory_catalog.csv,INCLUDED,figure5b/reference_tables/theory_catalog.csv,Original output table retained as an independent regression reference.
+thoery.zip,thoery/output_theory_trace/tables/theory_to_cluster_trace.csv,INCLUDED,figure5b/reference_tables/theory_to_cluster_trace.csv,Original output table retained as an independent regression reference.
+thoery.zip,thoery/output_theory_trace/tables/theory_to_mode_trace.csv,INCLUDED,figure5b/reference_tables/theory_to_mode_trace.csv,Original output table retained as an independent regression reference.
+feedback.zip,cooperation_radar_v6.ipynb:cell_7_zero_based,INCLUDED,figure5a/plot_radar.py,"Recovered six-card radar renderer; drawing functions retained, portable paths and strict input validation added."
+feedback.zip,cooperation_mode_scores_v10.txt,DEDUPLICATED,figure5b/data/cooperation_mode_scores.txt,Byte-identical 36-score matrix; one shared input for both panels.
+feedback.zip,cooperation_mode_scores_v13.txt,INCLUDED,provenance/figure5a_score_rationale.txt,Archived narrative record; all 36 values agree with shared matrix after two label changes; exact API run unverified.
+feedback.zip,cooperation_mode_scores_v10_2.txt,EXCLUDED,,Different matrix and earlier labels; not the selected Figure 5a input.
+feedback.zip,cooperation_mode_scores_v11.txt,EXCLUDED,,Different scores; not the shared final matrix.
+feedback.zip,cooperation_mode_scores_v12.txt,EXCLUDED,,Different scores; not the shared final matrix.
+feedback.zip,cooperation_radar_v6.ipynb:cells_0_to_6,EXCLUDED,,Online scoring/configuration cells and superseded plotting variants; exact upstream scoring run unverified.
+feedback.zip,"cooperation_radar_v1.ipynb,v2.ipynb,v3.ipynb,v5.ipynb",EXCLUDED,,Historical scoring and radar alternatives; retain only the recovered six-card renderer.
+feedback.zip,feature3.txt,EXCLUDED,,"LLM draft-scoring context, not required for archived-score plotting; source code truncates it to 2000 characters."
+feedback.zip,recommendation2050_ZC.ipynb,EXCLUDED,,Recommendation workflow outside verified Figure 5 modules.
+feedback.zip,output/,EXCLUDED,,Historical images and layout variants; outputs generated by the selected source are not duplicated in the release.

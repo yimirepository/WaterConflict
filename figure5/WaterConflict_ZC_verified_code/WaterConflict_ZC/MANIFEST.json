@@ -1,0 +1,182 @@
+{
+  "source_archives": [
+    {
+      "name": "thoery.zip",
+      "size_bytes": 26279437,
+      "sha256": "327badf1aa9c224442713b6cd0e148f77c9c06d0a54c7e2640285f5db563e2c0"
+    },
+    {
+      "name": "suggestions_one-hot_ZC.zip",
+      "size_bytes": 3559609,
+      "sha256": "3713ab490649dd4c6be1b43563a32461fd4db2bcd3a0daf285ac0d431e8f0b11"
+    },
+    {
+      "name": "feedback.zip",
+      "size_bytes": 72235137,
+      "sha256": "79c3dbdc4509dd25f3a20be6b91c50916a8086f612e71d9d4495f3516200ddad"
+    }
+  ],
+  "previous_release": {
+    "name": "WaterConflict_ZC_verified_code.zip",
+    "sha256": "0ed019f16d47d3675094a196f86aec968bf5e79ad0f7825387dfdf829f12f8e9"
+  },
+  "figure5a_selected_source": {
+    "archive": "feedback.zip",
+    "notebook": "cooperation_radar_v6.ipynb",
+    "cell_index_zero_based": 7,
+    "cell_source_sha256": "53234e4fe9f0ad47db843bc0ea8fe0b1fc5c43dde1d416e9609da4018e753cfe"
+  },
+  "files": [
+    {
+      "path": ".gitignore",
+      "size_bytes": 72,
+      "sha256": "6c8b2d2210c56fbb80c11d37426378e31ca1013b9762f83f11a88180c4b8862d"
+    },
+    {
+      "path": "DATA_NORMALIZATION.md",
+      "size_bytes": 5157,
+      "sha256": "a3d71dbce2b6f2a38b83fc678edbc10d2cfefd4f612f114a39f36e04432ef132"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 4610,
+      "sha256": "fb5de01338faa4b389fcbacfdad1eb09e9e6f0bb75455eb4db63a4b3c8713870"
+    },
+    {
+      "path": "SELECTION.csv",
+      "size_bytes": 10832,
+      "sha256": "848fad4418c7f3fa8524d5f4018a6f6e4a4f6453e3a3fc15b9d6d268a83f1148"
+    },
+    {
+      "path": "VALIDATION.json",
+      "size_bytes": 2220,
+      "sha256": "6dffca5292a014fd73948cbae45eadcf93539d7ef4868938b708bc3b88d7340a"
+    },
+    {
+      "path": "figure5a/README.md",
+      "size_bytes": 3788,
+      "sha256": "ae73087aebaf1d5f0a171ee62dc2ef31a1d7cb72d2580d32bb1e25ccadca5762"
+    },
+    {
+      "path": "figure5a/plot_radar.py",
+      "size_bytes": 11341,
+      "sha256": "0ac896564e4083ae326a88d9105ac1413830068d84fad20c45bdce1f7a64f7e3"
+    },
+    {
+      "path": "figure5b/README.md",
+      "size_bytes": 3751,
+      "sha256": "d57df227cd2dfe31e1dad1ee2b95f34d813d75910697f3415995a66059c937a0"
+    },
+    {
+      "path": "figure5b/data/cooperation_mode_scores.txt",
+      "size_bytes": 890,
+      "sha256": "76d3a2b146b26a1cfcae877e22b6b37c4e3240877591b4e431539b7242e2b226"
+    },
+    {
+      "path": "figure5b/data/event_data_relabel_IR.xlsx",
+      "size_bytes": 689468,
+      "sha256": "7aa37e023cfb83b5fe1e9d49ee774af2e898c8dd54b9eb964047e116fedc8b85"
+    },
+    {
+      "path": "figure5b/data/event_data_relabel_hydro.xlsx",
+      "size_bytes": 620138,
+      "sha256": "36dc795397602ef47cff80ec15745320a4c89c5f86041b153d3aa2bfc95ad1b1"
+    },
+    {
+      "path": "figure5b/data/event_data_relabel_sus.xlsx",
+      "size_bytes": 692865,
+      "sha256": "8caa57acb95e133d55aa4482bd566d8b9ec19b1364617021b132b2be20b935ca"
+    },
+    {
+      "path": "figure5b/data/latest_theory_reference_verification.xlsx",
+      "size_bytes": 18374,
+      "sha256": "2a786c11f756dd3c2dada127036f58f6479c614364bef1d1a9819d92ee98d9a6"
+    },
+    {
+      "path": "figure5b/reference_tables/cluster_to_mode_trace.csv",
+      "size_bytes": 8615,
+      "sha256": "38f3fc19ace9fe0835f0204f8b7f1ff3a4f6482ae6742f158dc2bcf342bb52e8"
+    },
+    {
+      "path": "figure5b/reference_tables/discipline_clusters.csv",
+      "size_bytes": 23858,
+      "sha256": "b8ccd12e2847072fe8dae279eaf8bffee87c3249694a08a31d34d5e45db133c9"
+    },
+    {
+      "path": "figure5b/reference_tables/final_mode_catalog.csv",
+      "size_bytes": 2779,
+      "sha256": "d86f77ddf96864401414e80c44fccea3b298ebcb9edf1565e701ee2f91d2e7c4"
+    },
+    {
+      "path": "figure5b/reference_tables/final_mode_theory_summary.csv",
+      "size_bytes": 7700,
+      "sha256": "6a7d640ae0cc5da7d84c12c58100a1a23920319530e1cb7c1e2daa04118a10da"
+    },
+    {
+      "path": "figure5b/reference_tables/radar_card_summary.csv",
+      "size_bytes": 10719,
+      "sha256": "90fa10ab48eb8d0701e5c38d89ffa10a46903f331c86dbfe624938cf02ad55d7"
+    },
+    {
+      "path": "figure5b/reference_tables/theory_catalog.csv",
+      "size_bytes": 11746,
+      "sha256": "6d162fd1efdf03afe9ae5d1617791501990266862ab815bb970ac736c525a55b"
+    },
+    {
+      "path": "figure5b/reference_tables/theory_to_cluster_trace.csv",
+      "size_bytes": 5255,
+      "sha256": "6414b1fdd3d7678df3dcf2ff4e65b5ca1bae6e9a02654e554ea9d641f50cea6f"
+    },
+    {
+      "path": "figure5b/reference_tables/theory_to_mode_trace.csv",
+      "size_bytes": 10521,
+      "sha256": "a2ee1c18cde742c7f43937746639d1cd8cb893332b74356a54ca6004f037d84c"
+    },
+    {
+      "path": "figure5b/requirements.txt",
+      "size_bytes": 98,
+      "sha256": "b780ce334377dc7a2df268631114ffe17fc7afd2a096f5bd3577856ac3c1bf38"
+    },
+    {
+      "path": "figure5b/run_theory_trace.py",
+      "size_bytes": 237,
+      "sha256": "c648b675d0734766b077114daa1beb2bf4839cac7ebb729edae5338e54289175"
+    },
+    {
+      "path": "figure5b/theory_trace_utils.py",
+      "size_bytes": 59037,
+      "sha256": "2b815bb456d093fa896558e0036bdb3563c541ddffe97f0146fa71b94767f2b7"
+    },
+    {
+      "path": "provenance/FIGURE5A_SCORE_PROVENANCE.md",
+      "size_bytes": 3428,
+      "sha256": "5268f9e06ae1b4c5c3f79cc6e5e82eb6a2a2e1edb54ced65ba932b86fa11bd8d"
+    },
+    {
+      "path": "provenance/event_data_with_clusters.xlsx",
+      "size_bytes": 605799,
+      "sha256": "186ce8e1e015a065dc5229a93f0cb0fafe292c34395278102f4653dd092a893f"
+    },
+    {
+      "path": "provenance/figure5a_score_rationale.txt",
+      "size_bytes": 13921,
+      "sha256": "4d107af2dc812fa3db61f6652a11e0b833d9ba9bf31c38bc09610048ed47447f"
+    },
+    {
+      "path": "requirements.txt",
+      "size_bytes": 30,
+      "sha256": "e8e256edf19480490abc6deae88f3842c3dd0045525a0dc38b47316414f8fd54"
+    },
+    {
+      "path": "run_figures.py",
+      "size_bytes": 443,
+      "sha256": "4c6d43e5693566fbb961177c2baad102f5759d545c16e33b6166956c88528c6c"
+    },
+    {
+      "path": "verify_reproduction.py",
+      "size_bytes": 3288,
+      "sha256": "607e3063220867c272b94fc420574e8f8db7c067212718f5c401f576f693ee79"
+    }
+  ],
+  "manifest_excludes_itself": true
+}

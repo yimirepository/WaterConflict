@@ -1,0 +1,50 @@
+{
+  "validated_at_utc": "2026-10-25T16:37:21.028049+00:00",
+  "scope": "Selected offline Figure 5a radar renderer plus verified Figure 5b theory trace",
+  "python": "3.12.14",
+  "packages": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "matplotlib": "3.10.8",
+    "seaborn": "0.13.2",
+    "scikit-learn": "1.8.0",
+    "openpyxl": "3.1.5",
+    "Pillow": "12.3.0"
+  },
+  "checks": {
+    "verification_entry_point_run_from_external_working_directory": "PASS",
+    "original_event_columns_and_clusters_equal_in_three_disciplinary_tables": "PASS",
+    "reproduced_reference_tables": [
+      "cluster_to_mode_trace.csv",
+      "discipline_clusters.csv",
+      "final_mode_catalog.csv",
+      "final_mode_theory_summary.csv",
+      "radar_card_summary.csv",
+      "theory_catalog.csv",
+      "theory_to_cluster_trace.csv",
+      "theory_to_mode_trace.csv"
+    ],
+    "table_numeric_atol": 1e-09,
+    "table_numeric_rtol": 1e-09,
+    "figure5a_plotted_values_equal_archived_reference": "36/36 EXACT",
+    "figure5a_v10_input_equals_shared_matrix": "BYTE IDENTICAL",
+    "figure5a_v13_narrative_values_equal_shared_matrix_after_label_normalization": "36/36 EXACT",
+    "figure5b_analytical_source_unchanged_from_previous_release": "PASS",
+    "figure5a_missing_and_nonfinite_score_rejection": "PASS",
+    "syntax_parse_all_packaged_python": "PASS",
+    "known_source_credential_literals_absent_from_release": "PASS",
+    "absolute_windows_path_literals_in_packaged_python": "NONE",
+    "cjk_scan_filenames_text_and_decoded_workbook_xml": "NONE",
+    "workbook_non_narrative_cells_equal_originals": "PASS",
+    "generated_and_readable_plots": {
+      "PNG": 5,
+      "SVG": 5
+    }
+  },
+  "limits": [
+    "Figure 5a regenerates plots from archived scores; the exact API run and a deterministic RF/SHAP-to-rating transformation remain unverified.",
+    "Recovered Figure 5a source layout differs from final manuscript assembly; colored title bands, bottom legend, and crowded title/axis spacing are preserved.",
+    "Online upstream clustering/relabeling scripts were not rerun and cannot be uniquely tied to provided checkpoints.",
+    "Arial was unavailable during validation; font substitution can affect placement."
+  ]
+}

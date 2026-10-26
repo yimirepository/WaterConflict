@@ -1,0 +1,42 @@
+1. Cross-Border Basin Agreements
+Supportive: 5.5
+Facilitative: 1.5
+Stress-relieving: 3
+Complementary: 4.5
+Preventive: 5
+Prescriptive: 2.5
+2. Collaborative Planning and Adaptation Strategies
+Supportive: 3
+Facilitative: 4
+Stress-relieving: 4
+Complementary: 4.5
+Preventive: 3.5
+Prescriptive: 3
+3. Joint Water Allocation Models
+Supportive: 4.5
+Facilitative: 3.5
+Stress-relieving: 4
+Complementary: 4.5
+Preventive: 4
+Prescriptive: 3
+4. Joint Data-Sharing Systems
+Supportive: 2.5
+Facilitative: 4.5
+Stress-relieving: 4.5
+Complementary: 5
+Preventive: 3.5
+Prescriptive: 3
+5. Transboundary Water Quality Standards
+Supportive: 5
+Facilitative: 1.5
+Stress-relieving: 3
+Complementary: 4.5
+Preventive: 2
+Prescriptive: 4.5
+6. Coordinated Hydropower Operations
+Supportive: 3.5
+Facilitative: 2.5
+Stress-relieving: 4
+Complementary: 3
+Preventive: 3.5
+Prescriptive: 4.5

@@ -1,0 +1,61 @@
+﻿discipline,cluster,cluster_name,event_count,mode,raw_score,normalized_weight,weighted_event_support
+Hydrology,0,Transboundary Waterway Strategies,288,Transboundary Water Quality Standards,0.1880402078612049,0.7217967592569072,207.8774666659893
+Hydrology,0,Transboundary Waterway Strategies,288,Cross-Border Basin Agreements,0.07247662800654422,0.27820324074309294,80.12253333401077
+Hydrology,1,Hydro-Diplomacy Alliances,200,Coordinated Hydropower Operations,0.14081833081860962,0.7686625913941357,153.73251827882714
+Hydrology,1,Hydro-Diplomacy Alliances,200,Joint Data-Sharing Systems,0.0423808158488575,0.23133740860586427,46.26748172117286
+Hydrology,2,Hydraulic Diplomacy Ventures,176,Coordinated Hydropower Operations,0.09496417593851732,0.6315376285348203,111.15062262212838
+Hydrology,2,Hydraulic Diplomacy Ventures,176,Joint Water Allocation Models,0.05540560671217933,0.3684623714651798,64.84937737787165
+Hydrology,3,Diplomatic Watershed Accords,322,Cross-Border Basin Agreements,0.08866929738766488,0.8110435965200917,261.1560380794695
+Hydrology,3,Diplomatic Watershed Accords,322,Transboundary Water Quality Standards,0.020658114564188555,0.1889564034799082,60.84396192053044
+Hydrology,4,Hydraulic Alliances,119,Coordinated Hydropower Operations,0.20054322593379847,0.8499287135554059,101.1415169130933
+Hydrology,4,Hydraulic Alliances,119,Cross-Border Basin Agreements,0.035409769576718875,0.1500712864445941,17.8584830869067
+Hydrology,5,Mekong Synergy Initiatives,106,Coordinated Hydropower Operations,0.09402123761286543,0.5053288492494517,53.564858020441875
+Hydrology,5,Mekong Synergy Initiatives,106,Joint Data-Sharing Systems,0.09203827146228846,0.4946711507505483,52.43514197955812
+Hydrology,6,Diplomatic Endorsement Dynamics,28,Coordinated Hydropower Operations,0.0,0.0,0.0
+Hydrology,6,Diplomatic Endorsement Dynamics,28,Transboundary Water Quality Standards,0.0,0.0,0.0
+Hydrology,7,Diplomatic Water Initiatives,183,Joint Water Allocation Models,0.11700678391862215,0.5798351086114086,106.10982487588778
+Hydrology,7,Diplomatic Water Initiatives,183,Cross-Border Basin Agreements,0.08478641932295192,0.42016489138859137,76.89017512411222
+Hydrology,8,Transboundary Environmental Initiatives,162,Transboundary Water Quality Standards,0.3182540111109903,0.8831528782464448,143.07076627592406
+Hydrology,8,Transboundary Environmental Initiatives,162,Coordinated Hydropower Operations,0.04210716638174853,0.11684712175355509,18.929233724075925
+Hydrology,9,Hydroelectric Diplomacy Chronicles,129,Coordinated Hydropower Operations,0.19114959068016146,0.8300923380289756,107.08191160573786
+Hydrology,9,Hydroelectric Diplomacy Chronicles,129,Joint Water Allocation Models,0.039125502731782655,0.16990766197102433,21.91808839426214
+International Relations,0,Transnational Water Management,288,Transboundary Water Quality Standards,0.11061170527749478,0.5598108714325228,161.2255309725666
+International Relations,0,Transnational Water Management,288,Joint Water Allocation Models,0.08697592819315572,0.4401891285674771,126.77446902743341
+International Relations,1,Hydroelectric Diplomacy,200,Coordinated Hydropower Operations,0.08866217945742949,0.6606851501781469,132.13703003562938
+International Relations,1,Hydroelectric Diplomacy,200,Joint Data-Sharing Systems,0.04553514499207973,0.3393148498218532,67.86296996437065
+International Relations,2,Technical Hydro-Diplomacy,176,Coordinated Hydropower Operations,0.09662417697978336,0.6362749385936791,111.98438919248753
+International Relations,2,Technical Hydro-Diplomacy,176,Joint Water Allocation Models,0.055234981882179776,0.3637250614063209,64.01561080751247
+International Relations,3,Hydrodiplomacy Frameworks,322,Cross-Border Basin Agreements,0.17302113260774624,0.5292704396652461,170.42508157220925
+International Relations,3,Hydrodiplomacy Frameworks,322,Joint Water Allocation Models,0.15388382871444464,0.4707295603347539,151.57491842779075
+International Relations,4,Hydro-Diplomacy Alliances,119,Coordinated Hydropower Operations,0.14343129565672985,0.7720890747487597,91.8785998951024
+International Relations,4,Hydro-Diplomacy Alliances,119,Joint Data-Sharing Systems,0.04233910357266331,0.2279109252512404,27.121400104897607
+International Relations,5,Riparian Diplomatic Initiatives,106,Cross-Border Basin Agreements,0.19376329569718412,0.7746639461898481,82.1143782961239
+International Relations,5,Riparian Diplomatic Initiatives,106,Collaborative Planning and Adaptation Strategies,0.05636231896476149,0.22533605381015187,23.885621703876097
+International Relations,6,Diplomatic Maneuverings Chronicle,28,Coordinated Hydropower Operations,0.0,0.0,0.0
+International Relations,6,Diplomatic Maneuverings Chronicle,28,Transboundary Water Quality Standards,0.0,0.0,0.0
+International Relations,7,Irrigation Diplomacy Initiative,183,Joint Water Allocation Models,0.06639199367853334,0.5952253608469056,108.92624103498372
+International Relations,7,Irrigation Diplomacy Initiative,183,Joint Data-Sharing Systems,0.04514894198332874,0.4047746391530944,74.07375896501628
+International Relations,8,Eco-Diplomacy Frameworks,162,Cross-Border Basin Agreements,0.10563600735801376,0.6347899966675963,102.8359794601506
+International Relations,8,Eco-Diplomacy Frameworks,162,Transboundary Water Quality Standards,0.06077494415754609,0.3652100033324038,59.16402053984941
+International Relations,9,Hydro-Diplomacy Initiatives,129,Joint Data-Sharing Systems,0.05439795594521737,0.6051591653948183,78.06553233593156
+International Relations,9,Hydro-Diplomacy Initiatives,129,Cross-Border Basin Agreements,0.0354923721798256,0.39484083460518166,50.934467664068436
+Sustainability Science,0,"""Hydro-Diplomacy and Restoration""",288,Collaborative Planning and Adaptation Strategies,0.1310628307737168,0.6826929387697268,196.61556636568133
+Sustainability Science,0,"""Hydro-Diplomacy and Restoration""",288,Transboundary Water Quality Standards,0.060916349514721004,0.31730706123027325,91.3844336343187
+Sustainability Science,1,Hydro-Diplomacy Initiatives,200,Coordinated Hydropower Operations,0.17560120576427507,0.8076053246487829,161.52106492975656
+Sustainability Science,1,Hydro-Diplomacy Initiatives,200,Joint Data-Sharing Systems,0.0418332271261244,0.19239467535121707,38.478935070243416
+Sustainability Science,2,Hydro-Development Diplomacy,176,Coordinated Hydropower Operations,0.14467955590664056,0.7252410375843272,127.64242261484159
+Sustainability Science,2,Hydro-Development Diplomacy,176,Joint Water Allocation Models,0.05481212811133389,0.27475896241567266,48.357577385158386
+Sustainability Science,3,Unified Hydro-Diplomacy Frameworks,322,Cross-Border Basin Agreements,0.2094499032725688,0.6850494155670762,220.58591181259854
+Sustainability Science,3,Unified Hydro-Diplomacy Frameworks,322,Joint Water Allocation Models,0.09629432263730735,0.3149505844329237,101.41408818740142
+Sustainability Science,4,Hydraulic Diplomacy Initiatives,119,Coordinated Hydropower Operations,0.08007146108247769,0.6379040305182645,75.91057963167347
+Sustainability Science,4,Hydraulic Diplomacy Initiatives,119,Joint Data-Sharing Systems,0.045451277843350554,0.3620959694817355,43.08942036832652
+Sustainability Science,5,Mekong Water Diplomacy Dynamics,106,Cross-Border Basin Agreements,0.09764463064527364,0.68217350692436,72.31039173398216
+Sustainability Science,5,Mekong Water Diplomacy Dynamics,106,Coordinated Hydropower Operations,0.04549289910945571,0.3178264930756401,33.68960826601785
+Sustainability Science,6,Diplomatic Shifts and Alliances,28,Coordinated Hydropower Operations,0.0,0.0,0.0
+Sustainability Science,6,Diplomatic Shifts and Alliances,28,Transboundary Water Quality Standards,0.0,0.0,0.0
+Sustainability Science,7,Diplomatic Watershed Initiatives,183,Coordinated Hydropower Operations,0.04760795618316834,0.5294654830217815,96.89218339298603
+Sustainability Science,7,Diplomatic Watershed Initiatives,183,Joint Data-Sharing Systems,0.04230905958046325,0.4705345169782185,86.10781660701399
+Sustainability Science,8,Trans-Boundary Water Solutions,162,Collaborative Planning and Adaptation Strategies,0.06523259440563148,0.5442535987344657,88.16908299498344
+Sustainability Science,8,Trans-Boundary Water Solutions,162,Transboundary Water Quality Standards,0.05462438873111691,0.45574640126553434,73.83091700501656
+Sustainability Science,9,Hydro-Diplomacy Synergies,129,Joint Data-Sharing Systems,0.07088674649897095,0.613615717956092,79.15642761633588
+Sustainability Science,9,Hydro-Diplomacy Synergies,129,Coordinated Hydropower Operations,0.04463628269442942,0.38638428204390796,49.843572383664124
