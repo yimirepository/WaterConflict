@@ -87,7 +87,7 @@ def main(file_path, n_clusters=7):
     openai.api_type = "azure"
     openai.api_base = 'https://conflict.openai.azure.com'
     openai.api_version = "2022-12-01"
-    openai.api_key = '02e96096dcb24ab3b53a63049aa52155'
+    openai.api_key = ''
 
     embedding_deployment_name = 'conflict'
 
