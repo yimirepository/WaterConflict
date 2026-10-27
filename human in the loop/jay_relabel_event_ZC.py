@@ -6,7 +6,7 @@ import logging
 openai.api_type = "azure"
 openai.api_base = "https://conflict.openai.azure.com/"  # Replace with your Azure OpenAI API base URL
 openai.api_version = "2023-03-15-preview"
-openai.api_key = "02e96096dcb24ab3b53a63049aa52155"
+openai.api_key = ""
 
 # Load the cluster labels and descriptions
 cluster_labels_file_path = 'cluster_labels.txt'
