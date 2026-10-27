@@ -1,0 +1,37 @@
+criterion_raw,mode_raw,feature_importance,rank_within_criterion,criterion,mode
+Complementary,Cross-Border Basin Agreements,0.566932854,1,complementary,cross_border_basin_agreements
+Complementary,Collaborative River Basin Planning,0.531406297,2,complementary,collaborative_planning_and_adaptation_strategies
+Complementary,Joint Data-Sharing Systems,0.481886237,3,complementary,joint_data_sharing_systems
+Complementary,Joint Water Allocation Models,0.353285863,4,complementary,joint_water_allocation_models
+Complementary,Transboundary Water Quality Standards,0.318905997,5,complementary,transboundary_water_quality_standards
+Complementary,Coordinated Hydropower Operations,0.265487432,6,complementary,coordinated_hydropower_operations
+Facilitative,Transboundary Water Quality Standards,0.031610038,1,facilitative,transboundary_water_quality_standards
+Facilitative,Joint Data-Sharing Systems,-0.027033534,2,facilitative,joint_data_sharing_systems
+Facilitative,Collaborative River Basin Planning,-0.062292248,3,facilitative,collaborative_planning_and_adaptation_strategies
+Facilitative,Joint Water Allocation Models,-0.072731375,4,facilitative,joint_water_allocation_models
+Facilitative,Cross-Border Basin Agreements,-0.07659286,5,facilitative,cross_border_basin_agreements
+Facilitative,Coordinated Hydropower Operations,-0.081259218,6,facilitative,coordinated_hydropower_operations
+Prescriptive,Cross-Border Basin Agreements,0.027068,1,prescriptive,cross_border_basin_agreements
+Prescriptive,Joint Water Allocation Models,0.013393,2,prescriptive,joint_water_allocation_models
+Prescriptive,Joint Data-Sharing Systems,0.009157,3,prescriptive,joint_data_sharing_systems
+Prescriptive,Transboundary Water Quality Standards,0.00658,4,prescriptive,transboundary_water_quality_standards
+Prescriptive,Collaborative River Basin Planning,0.006018,5,prescriptive,collaborative_planning_and_adaptation_strategies
+Prescriptive,Coordinated Hydropower Operations,0.00458,6,prescriptive,coordinated_hydropower_operations
+Preventive,Coordinated Hydropower Operations,-0.890319,1,preventive,coordinated_hydropower_operations
+Preventive,Transboundary Water Quality Standards,-0.878936,2,preventive,transboundary_water_quality_standards
+Preventive,Collaborative River Basin Planning,-0.867872,3,preventive,collaborative_planning_and_adaptation_strategies
+Preventive,Joint Data-Sharing Systems,-0.864894,4,preventive,joint_data_sharing_systems
+Preventive,Joint Water Allocation Models,-0.835957,5,preventive,joint_water_allocation_models
+Preventive,Cross-Border Basin Agreements,-0.784894,6,preventive,cross_border_basin_agreements
+Stress relieving,Joint Water Allocation Models,0.06318555,1,stress_relieving,joint_water_allocation_models
+Stress relieving,Coordinated Hydropower Operations,0.035645949,2,stress_relieving,coordinated_hydropower_operations
+Stress relieving,Cross-Border Basin Agreements,0.032080857,3,stress_relieving,cross_border_basin_agreements
+Stress relieving,Joint Data-Sharing Systems,0.030962011,4,stress_relieving,joint_data_sharing_systems
+Stress relieving,Transboundary Water Quality Standards,0.024598271,5,stress_relieving,transboundary_water_quality_standards
+Stress relieving,Collaborative River Basin Planning,-0.007246574,6,stress_relieving,collaborative_planning_and_adaptation_strategies
+Affordable,Cross-Border Basin Agreements,-0.037495964,1,supportive,cross_border_basin_agreements
+Affordable,Joint Water Allocation Models,-0.036542842,2,supportive,joint_water_allocation_models
+Affordable,Coordinated Hydropower Operations,-0.028679569,3,supportive,coordinated_hydropower_operations
+Affordable,Collaborative River Basin Planning,-0.025688989,4,supportive,collaborative_planning_and_adaptation_strategies
+Affordable,Joint Data-Sharing Systems,-0.008619857,5,supportive,joint_data_sharing_systems
+Affordable,Transboundary Water Quality Standards,0.068867763,6,supportive,transboundary_water_quality_standards
