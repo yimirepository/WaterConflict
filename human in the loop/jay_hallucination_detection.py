@@ -8,7 +8,7 @@ import time
 openai.api_type = "azure"
 openai.api_base = "https://conflict.openai.azure.com/"
 openai.api_version = "2023-03-15-preview"
-openai.api_key = "02e96096dcb24ab3b53a63049aa52155"  # Replace with your Azure OpenAI API key
+openai.api_key = ""  # Replace with your Azure OpenAI API key
 re_augmentation_engine = "rag"  # Azure deployment name for GPT-4 or GPT-3.5-turbo
 
 # Load the CSV file
