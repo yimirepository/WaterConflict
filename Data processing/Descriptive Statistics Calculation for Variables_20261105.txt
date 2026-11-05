@@ -1,0 +1,144 @@
+from pathlib import Path
+
+import numpy as np
+import pandas as pd
+from sklearn.preprocessing import StandardScaler
+
+
+# Input and output paths
+input_path = Path(
+    r"E:\AExperiment\11Water\E_RF_Data"
+    r"\B_Clustered_panel\03_Clustered_panel_1119.xlsx"
+)
+
+output_path = Path(
+    r"C:\Users\Lenovo\Desktop\S4_descriptive_statistics_standardized.csv"
+)
+
+
+# Load the historical panel
+df = pd.read_excel(input_path)
+
+
+# Cooperation-mode indicators used for sample selection
+mode_columns = [
+    "Cross-Border Basin Agreements",
+    "Collaborative River Basin Planning",
+    "Joint Water Allocation Models",
+    "Joint Data-Sharing Systems",
+    "Transboundary Water Quality Standards",
+    "Coordinated Hydropower Operations",
+]
+
+
+# Continuous predictors
+continuous_columns = [
+    "gdp_percapita",
+    "export",
+    "population_density",
+    "rural_population",
+    "precipitation",
+    "bws_score",
+]
+
+
+# Match the original conflict coding
+df.loc[df["Both"] == 1, "Conflict"] = 1
+df["potential_Conflict"] = df["Conflict"]
+
+
+# Select the same fields as the original preprocessing
+selected_columns = [
+    "year",
+    "ccode_iso3",
+    "Country_count",
+    "Conflict",
+    "potential_Conflict",
+] + continuous_columns + mode_columns
+
+df = df[selected_columns].copy()
+df = df.replace("..", np.nan)
+
+
+# Ensure that analysis variables are numeric
+numeric_columns = [
+    "Country_count",
+    "Conflict",
+    "potential_Conflict",
+] + continuous_columns + mode_columns
+
+df[numeric_columns] = df[numeric_columns].apply(
+    pd.to_numeric,
+    errors="raise",
+)
+
+
+# Standardize before complete-case selection, as in the original code
+scaler = StandardScaler()
+df[continuous_columns] = scaler.fit_transform(
+    df[continuous_columns]
+)
+
+
+# Match the original missing-value exclusion rule
+df = df.dropna(
+    subset=df.columns.difference(["Country_count"])
+).copy()
+
+
+# Variables reported in the descriptive-statistics table
+variable_names = {
+    "Country_count": "Conflict count",
+    "Conflict": "Conflict",
+    "gdp_percapita": "GDP per capita",
+    "export": "Exports",
+    "population_density": "Population density",
+    "rural_population": "Rural population",
+    "precipitation": "Precipitation",
+    "bws_score": "Baseline water stress",
+}
+
+
+# Calculate descriptive statistics
+# pandas std() uses the sample standard deviation: ddof=1
+statistics = df[list(variable_names)].agg(
+    ["min", "max", "mean", "std", "count"]
+).T
+
+statistics = statistics.rename(
+    index=variable_names,
+    columns={
+        "min": "Min.",
+        "max": "Max.",
+        "mean": "Mean",
+        "std": "SD",
+        "count": "N",
+    },
+)
+
+statistics.index.name = "Variable"
+statistics["N"] = statistics["N"].astype(int)
+
+
+# Display statistics rounded to two decimal places
+print(
+    statistics.to_string(
+        float_format=lambda value: f"{value:.2f}"
+    )
+)
+
+print(f"\nObservations: {len(df):,}")
+print(f"Countries: {df['ccode_iso3'].nunique()}")
+print(
+    f"Period: {int(df['year'].min())}"
+    f"–{int(df['year'].max())}"
+)
+
+
+# Export full-precision statistics
+statistics.to_csv(
+    output_path,
+    encoding="utf-8-sig",
+)
+
+print(f"\nSaved to: {output_path}")
