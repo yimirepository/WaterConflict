@@ -1,0 +1,192 @@
+from pathlib import Path
+
+import numpy as np
+import pandas as pd
+from sklearn.preprocessing import StandardScaler
+
+
+# Input and output paths
+historical_path = Path(
+    rEAExperiment11WaterE_RF_Data
+    rB_Clustered_panel03_Clustered_panel_1119.xlsx
+)
+
+future_path = Path(
+    rEAExperiment11WaterE_RF_Data
+    rE_ssp_predicationssp1-5_future_data.xlsx
+)
+
+output_path = Path(
+    rCUsersLenovoDesktop
+    rS5_future_predictor_statistics_SSP5.csv
+)
+
+
+# Six contextual predictors
+context_columns = [
+    population_density,
+    export,
+    gdp_percapita,
+    rural_population,
+    precipitation,
+    bws_score,
+]
+
+
+# Load historical data and calculate cumulative average conflict count
+historical = pd.read_excel(historical_path)
+
+historical = historical.sort_values(
+    [Country, year]
+).copy()
+
+historical[Average_conflict] = (
+    historical.groupby(Country)[Conflict_count_yr].cumsum()
+     (historical.groupby(Country).cumcount() + 1)
+)
+
+
+# Load the 2050 SSP5 inputs
+future = pd.read_excel(
+    future_path,
+    sheet_name=ssp5,
+)
+
+future = future.loc[future[year] == 2050].copy()
+
+future = future.rename(
+    columns={
+        country Country,
+        country_code ccode_iso3,
+        population_density_ssp5 population_density,
+        GDP per capita_ssp5(constant 2015 US$) gdp_percapita,
+        rural_population_ssp5(%) rural_population,
+        precipitation_ssp5 precipitation,
+        bws_ssp5 bws_score,
+    }
+)
+
+
+# Combine historical and future data
+df = pd.concat(
+    [historical, future],
+    ignore_index=True,
+)
+
+
+# Hold Average_conflict at its 2019 value for each country
+conflict_2019 = (
+    df.loc[
+        df[year] == 2019,
+        [ccode_iso3, Average_conflict],
+    ]
+    .drop_duplicates(subset=ccode_iso3, keep=first)
+    .set_index(ccode_iso3)[Average_conflict]
+)
+
+future_mask = df[year] == 2050
+
+df.loc[future_mask, Average_conflict] = (
+    df.loc[future_mask, ccode_iso3]
+    .map(conflict_2019)
+    .fillna(df.loc[future_mask, Average_conflict])
+)
+
+
+# Match the original conflict coding
+df.loc[df[Both] == 1, Conflict] = 1
+
+
+# Select the same fields used in the prediction preprocessing
+selected_columns = [
+    Country,
+    ccode_iso3,
+    Conflict,
+    Average_conflict,
+    year,
+] + context_columns
+
+df = df[selected_columns].copy()
+df = df.replace(.., np.nan)
+
+numeric_predictors = [Average_conflict] + context_columns
+
+df[numeric_predictors] = df[numeric_predictors].apply(
+    pd.to_numeric,
+    errors=raise,
+)
+
+
+# Standardize the six contextual variables before sample selection
+# Average_conflict retains its original scale
+scaler = StandardScaler()
+
+df[context_columns] = scaler.fit_transform(
+    df[context_columns]
+)
+
+
+# Match the original complete-case selection
+# Future Conflict labels are not required
+df = df.dropna(
+    subset=df.columns.difference([Conflict])
+).copy()
+
+
+# Retain only the 2050 prediction sample
+future_sample = df.loc[df[year] == 2050].copy()
+
+
+# Formal variable names and reporting order
+variable_names = {
+    Average_conflict Historical average conflict count,
+    population_density Population density,
+    export Exports,
+    gdp_percapita GDP per capita,
+    rural_population Rural population,
+    precipitation Precipitation,
+    bws_score Baseline water stress,
+}
+
+
+# Calculate descriptive statistics
+# std() uses the sample standard deviation ddof=1
+statistics = future_sample[list(variable_names)].agg(
+    [min, max, mean, std, count]
+).T
+
+statistics = statistics.rename(
+    index=variable_names,
+    columns={
+        min Min.,
+        max Max.,
+        mean Mean,
+        std SD,
+        count N,
+    },
+)
+
+statistics.index.name = Variable
+statistics[N] = statistics[N].astype(int)
+
+
+# Display two decimal places
+print(
+    statistics.to_string(
+        float_format=lambda value f{value.2f}
+    )
+)
+
+print(fnObservations {len(future_sample),})
+print(fCountries {future_sample['ccode_iso3'].nunique()})
+print(Year 2050)
+print(Scenario SSP5)
+
+
+# Export full-precision results
+statistics.to_csv(
+    output_path,
+    encoding=utf-8-sig,
+)
+
+print(fnSaved to {output_path})
